@@ -1,0 +1,57 @@
+{
+  "name": "line-chart",
+  "version": "1.0.0",
+  "description": "A sleek animated sparkline line chart component for React dashboards.",
+  "author": "Sona F Shukoor",
+  "license": "MIT",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sonashukoor/chart-npm-package.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sonashukoor/chart-npm-package/issues"
+  },
+  "homepage": "https://github.com/sonashukoor/chart-npm-package#readme",
+  "keywords": [
+    "react",
+    "chart",
+    "sparkline",
+    "linechart",
+    "dashboard"
+  ],
+  "peerDependencies": {
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0"
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "dev": "tsup src/index.ts --watch --format cjs,esm --dts",
+    "prepublishOnly": "npm run build"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
