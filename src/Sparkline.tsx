@@ -9,7 +9,7 @@ export type SparklineProps = {
   showDots?: boolean;
   gradientColors?: [string, string]; // [startColor, endColor]
   showTooltip?: boolean;
-  backgroundColor?: string; // optional chart background
+  backgroundColor?: string; // chart background
 };
 
 export const Sparkline: React.FC<SparklineProps> = ({
