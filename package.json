@@ -1,6 +1,6 @@
 {
   "name": "line-chart-sparkline",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A sleek animated sparkline line chart component for React dashboards.",
   "author": "Sona F Shukoor",
   "license": "MIT",
